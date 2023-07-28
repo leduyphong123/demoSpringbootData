@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <th:block th:each="element : ${customerList}">
+        <tr>
+            <td th:text="${element.name}"></td>
+        </tr> <tr>
+            <td th:text="${element.email}"></td>
+        </tr> <tr>
+            <td th:text="${element.address}"></td>
+        </tr>
+
+    </th:block>
+</table>
+</body>
+</html>
